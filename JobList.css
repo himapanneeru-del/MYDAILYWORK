@@ -1,0 +1,104 @@
+/* frontend/src/JobList.css */
+.app-container {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.subtitle {
+  color: #78b8d8;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.create-job {
+  border: 1px solid #cf61ac;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: #fafafa;
+}
+
+.create-job h3 {
+  margin-top: 0;
+}
+
+.create-job-form input,
+.create-job-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.create-job-form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.create-job-form .btn-secondary {
+  background: #eee;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.message {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.message.error {
+  background: #ffe7e6;
+  color: #a00;
+}
+
+.message.success {
+  background: #e6ffed;
+  color: #066;
+}
+
+.job-section h2 {
+  margin-top: 18px;
+}
+
+.job-list {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.job-card {
+  border: 1px solid #c2ee3e;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.job-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.job-company {
+  color: #555;
+  margin-top: 4px;
+}
+
+.job-description {
+  margin-top: 8px;
+  color: #333;
+}

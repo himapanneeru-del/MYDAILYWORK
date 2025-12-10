@@ -1,0 +1,13 @@
+/* frontend/src/App.css */
+.create-job-form input,
+.create-job-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #e87373;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button { padding: 8px 12px; border-radius: 6px; cursor: pointer; }
+button[disabled] { opacity: 0.6; cursor: not-allowed; }
+.job-card { background: #e06cbb; }
