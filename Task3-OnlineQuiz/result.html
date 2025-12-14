@@ -1,1 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result</title>
+</head>
+<body>
+  <h2>Your Score</h2>
+  <p id="score"></p>
+
+  <script>
+    document.getElementById("score").innerText =
+      localStorage.getItem("score");
+  </script>
+</body>
+</html>
 
