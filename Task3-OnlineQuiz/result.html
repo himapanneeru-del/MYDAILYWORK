@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Result</title>
+  <title>Quiz Result</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Your Score</h2>
-  <p id="score"></p>
+  <div class="container">
+    <h2>Quiz Result</h2>
+
+    <p>Total Questions: <b id="total"></b></p>
+    <p>Attempted Questions: <b id="attempted"></b></p>
+    <p>Correct Answers: <b id="correct"></b></p>
+    <p>Percentage: <b id="percent"></b>%</p>
+    <p>Status: <b id="status"></b></p>
+
+    <a href="index.html"><button>Go Home</button></a>
+  </div>
 
   <script>
-    document.getElementById("score").innerText =
-      localStorage.getItem("score");
+    let total = Number(localStorage.getItem("total"));
+    let attempted = Number(localStorage.getItem("attempted"));
+    let correct = Number(localStorage.getItem("score"));
+
+    let percent = Math.round((correct / total) * 100);
+
+    document.getElementById("total").innerText = total;
+    document.getElementById("attempted").innerText = attempted;
+    document.getElementById("correct").innerText = correct;
+    document.getElementById("percent").innerText = percent;
+    document.getElementById("status").innerText =
+      percent >= 40 ? "PASS ✅" : "FAIL ❌";
   </script>
 </body>
 </html>
-
